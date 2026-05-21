@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: househub-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-househub}
+      POSTGRES_USER: ${POSTGRES_USER:-househub}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-househub}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-househub} -d ${POSTGRES_DB:-househub}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: src/HouseHub.Api/Dockerfile
+    container_name: househub-api
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__Default: "Host=postgres;Port=5432;Database=${POSTGRES_DB:-househub};Username=${POSTGRES_USER:-househub};Password=${POSTGRES_PASSWORD:-househub}"
+    ports:
+      - "5080:8080"
+
+volumes:
+  postgres_data:

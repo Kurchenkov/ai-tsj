@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{80F337B7-0378-43F7-BDD2-A4CC03291F26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseHub.Api", "src\HouseHub.Api\HouseHub.Api.csproj", "{83E38DB9-3532-457B-83CF-8A79B0D19473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseHub.Application", "src\HouseHub.Application\HouseHub.Application.csproj", "{672A8AB5-4958-4817-B90B-E452619B24F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseHub.Domain", "src\HouseHub.Domain\HouseHub.Domain.csproj", "{774FC8B4-208F-4D51-89AB-D9F10FC78CBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseHub.Infrastructure", "src\HouseHub.Infrastructure\HouseHub.Infrastructure.csproj", "{A233FABF-E06B-4E8D-9718-BCF626585180}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0FC637E6-271A-4803-9DBC-B96C6FB3C9F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseHub.UnitTests", "tests\HouseHub.UnitTests\HouseHub.UnitTests.csproj", "{A6109434-04C3-4A50-9F14-689C6EAF67F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseHub.IntegrationTests", "tests\HouseHub.IntegrationTests\HouseHub.IntegrationTests.csproj", "{7F36CD07-7E7B-4C4E-8B54-9ADF781A47DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83E38DB9-3532-457B-83CF-8A79B0D19473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83E38DB9-3532-457B-83CF-8A79B0D19473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83E38DB9-3532-457B-83CF-8A79B0D19473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83E38DB9-3532-457B-83CF-8A79B0D19473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{672A8AB5-4958-4817-B90B-E452619B24F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{672A8AB5-4958-4817-B90B-E452619B24F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{672A8AB5-4958-4817-B90B-E452619B24F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{672A8AB5-4958-4817-B90B-E452619B24F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{774FC8B4-208F-4D51-89AB-D9F10FC78CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774FC8B4-208F-4D51-89AB-D9F10FC78CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774FC8B4-208F-4D51-89AB-D9F10FC78CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774FC8B4-208F-4D51-89AB-D9F10FC78CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A233FABF-E06B-4E8D-9718-BCF626585180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A233FABF-E06B-4E8D-9718-BCF626585180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A233FABF-E06B-4E8D-9718-BCF626585180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A233FABF-E06B-4E8D-9718-BCF626585180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6109434-04C3-4A50-9F14-689C6EAF67F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6109434-04C3-4A50-9F14-689C6EAF67F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6109434-04C3-4A50-9F14-689C6EAF67F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6109434-04C3-4A50-9F14-689C6EAF67F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F36CD07-7E7B-4C4E-8B54-9ADF781A47DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F36CD07-7E7B-4C4E-8B54-9ADF781A47DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F36CD07-7E7B-4C4E-8B54-9ADF781A47DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F36CD07-7E7B-4C4E-8B54-9ADF781A47DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{83E38DB9-3532-457B-83CF-8A79B0D19473} = {80F337B7-0378-43F7-BDD2-A4CC03291F26}
+		{672A8AB5-4958-4817-B90B-E452619B24F8} = {80F337B7-0378-43F7-BDD2-A4CC03291F26}
+		{774FC8B4-208F-4D51-89AB-D9F10FC78CBF} = {80F337B7-0378-43F7-BDD2-A4CC03291F26}
+		{A233FABF-E06B-4E8D-9718-BCF626585180} = {80F337B7-0378-43F7-BDD2-A4CC03291F26}
+		{A6109434-04C3-4A50-9F14-689C6EAF67F5} = {0FC637E6-271A-4803-9DBC-B96C6FB3C9F2}
+		{7F36CD07-7E7B-4C4E-8B54-9ADF781A47DC} = {0FC637E6-271A-4803-9DBC-B96C6FB3C9F2}
+	EndGlobalSection
+EndGlobal
